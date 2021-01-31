@@ -3,6 +3,9 @@ McKenna Branting
 This is my own work
 Runge Kutta Method for solving ODE
 """
+
+#Records Runtime 
+import timeit
 from scipy.integrate import odeint
 import numpy as np
 import matplotlib.pyplot as plt
@@ -81,6 +84,8 @@ rungeK(x0,y0,h)
 
 
 """ Graph ODE using ODEINT """
+#Starts Runtime Timer
+start = timeit.default_timer()
 
 t = np.linspace(0,2000)
 y = odeint(equation,y0,t)
@@ -94,3 +99,13 @@ plt.plot(t,y)
 plt.xlabel('time')
 plt.ylabel('y(t)')
 plt.show()
+#Stops and Displays Runtime
+stop = timeit.default_timer()
+
+print("")
+print("----------------------------------------")
+print("CALCULATED THE TIME TO EXECUTE CODE -->")
+print('Time: ', stop - start)  
+print("Complexity: O(n^2)") 
+
+

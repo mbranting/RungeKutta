@@ -21,9 +21,11 @@ Run program
 
 What is generated
 1. The initial values are printed
-2. The data values gathered through ODIENT are printed
-3. Visual representation showing ( 1000 - 2000 points (x-values) )
+2. The Runge-Kutta Fehlberg results are printed
+3. The data values gathered through ODIENT are printed
+4. Visual representation showing ( 1000 - 2000 points (x-values) )
 
-IMPORTANT: Previous attempts to generate information from more of a Runge-Kutta-Fehlberg 
-approach has been included but commented out
+
+***IMPORTANT: Previous attempts to generate information from more of a Runge-Kutta-Fehlberg 
+approach has been included.***
 
